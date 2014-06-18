@@ -25,6 +25,12 @@ android {
             keyAlias "key_alias"
             keyPassword "Key01_rs"
         }
+		release_free {
+            storeFile file('keystores/release.keystore')
+            storePassword "Key01_rs"
+            keyAlias "key_alias"
+            keyPassword "Key01_rs"
+        }
 		debug {
             storeFile file('keystores/debug.keystore')
         }
@@ -36,16 +42,36 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), \
                           'proguard-rules.txt'
         }
+		release_free {
+			signingConfig signingConfigs.release_free
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), \
+                          'proguard-rules.txt'
+        }
     }
 sourceSets {
       main {
           manifest.srcFile 'AndroidManifest.xml'
-		  java.srcDirs = ['src']
+		  res.srcDirs = ['res']
+		  assets.srcDirs = ['assets']
+      }
+	  debug {
+          java.srcDirs = ['src']
 	      resources.srcDirs = ['src']
 		  aild.srcDirs = ['src']
 		  renderscript.srcDirs = ['src']
-		  res.srcDirs = ['res']
-		  assets.srcDirs = ['assets']
+      }
+	  release {
+          java.srcDirs = ['src']
+	      resources.srcDirs = ['src']
+		  aild.srcDirs = ['src']
+		  renderscript.srcDirs = ['src']
+      }
+	  release_free {
+          java.srcDirs = ['src_free']
+	      resources.srcDirs = ['src_free']
+		  aild.srcDirs = ['src_free']
+		  renderscript.srcDirs = ['src_free']
       }
 	}
     compileSdkVersion 19
