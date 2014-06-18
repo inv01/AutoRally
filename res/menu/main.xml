@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.autorally.MainActivity" >
+
+    <item
+        android:id="@+id/action_event"
+        android:orderInCategory="100"
+        android:title="@string/action_event"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_not_filmed"
+        android:orderInCategory="100"
+        android:title="@string/action_not_filmed"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="@string/action_filter"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_export"
+        android:orderInCategory="100"
+        android:title="@string/action_export"
+        />
+    <item
+        android:id="@+id/action_export_all"
+        android:orderInCategory="100"
+        android:title="@string/action_export_all"
+        />
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:title="@string/action_clear"
+        />
+    <item
+        android:id="@+id/action_clear_all"
+        android:orderInCategory="100"
+        android:title="@string/action_clear_all"
+        />
+</menu>

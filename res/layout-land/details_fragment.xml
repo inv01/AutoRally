@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        >
+    <ScrollView 
+        android:layout_width="0dp"
+        android:layout_weight=".50"
+        android:layout_height="match_parent"
+        >
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+        
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/data_comment"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edtCarNumber"
+                android:layout_width="0dp"
+                android:layout_weight=".50"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/car_number_dual"
+                android:inputType="number"
+                android:textSize="@dimen/font_size" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".50"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/car_time" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3.0"
+            android:stepSize="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding" >
+
+            <ImageButton
+                android:id="@+id/btnDelCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_delete_draw"
+                android:contentDescription="@string/delete_data"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btnPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_pic_draw"
+                android:contentDescription="@string/add_pic"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btnInterview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_1"
+                android:contentDescription="@string/add_int"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_save_draw"
+                android:contentDescription="@string/save_data"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_next_draw"
+                android:contentDescription="@string/add_car"
+                android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight=".50"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/drawer_color"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:gravity="center"
+            />
+        <ImageView 
+            android:id="@+id/imgPlace"
+            android:layout_width="match_parent"
+            android:layout_weight=".50"
+            android:layout_height="0dp"
+            android:contentDescription="@string/add_pic"
+        />
+    </LinearLayout>
+</LinearLayout>

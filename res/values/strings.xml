@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutoRally</string>
+    <string name="action_event">Event</string>
+    <string name="action_filter">Search</string>
+    <string name="action_not_filmed">Not filmed</string>
+    <string name="action_export">Export event</string>
+    <string name="action_export_all">Export all</string>
+    <string name="action_clear">Clear event</string>
+    <string name="action_clear_all">Delete all</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_rally">Event details</string>
+    <string name="car_number">Car:</string>
+    <string name="car_number_dual">Car #</string>
+    <string name="car_time">Shot time:</string>
+    <string name="save_data">save changes</string>
+    <string name="delete_data">delete</string>
+    <string name="data_comment">Note</string>
+    <string name="more">Picture</string>
+    <string name="less">Hide</string>
+    <string name="add_car">ADD NEW SHOT</string>
+    <string name="add_pic">add picture</string>
+    <string name="add_int">add interview</string>
+    <string name="changes_saved">Changes saved</string>
+    <string name="task_deleted">Deleted</string>
+    <string name="car_number_empty">Enter car number!</string>
+    <string name="event_empty">Please create event first</string>
+    <string name="eventname_empty">Enter event!</string>
+    <string name="teamnumber_empty">Enter team!</string>
+    <string name="locname_empty">Enter location!</string>
+    <string name="carnum_empty">Enter number of cars!</string>
+    <string name="event_name">Event name:</string>
+    <string name="team_number">Team number:</string>
+    <string name="location_name">Location:</string>
+    <string name="cars_number">Attending cars number:</string>
+    <string name="alert_request">Request</string>
+    <string name="alert_nocamera">No camera found</string>
+    <string name="alert_question_event">Would you like to create event?</string>
+    <string name="b0">0</string>
+    <string name="b1">1</string>
+    <string name="b2">2</string>
+    <string name="b3">3</string>
+    <string name="b4">4</string>
+    <string name="b5">5</string>
+    <string name="b6">6</string>
+    <string name="b7">7</string>
+    <string name="b8">8</string>
+    <string name="b9">9</string>
+    
+    <string name="print_not_exp">Text report not exported.</string>
+    <string name="exporting">Exporting in progress&#8230;</string>
+    <string name="saved_in_downloads">saved in Downloads</string>
+    <string name="cars_left">Not filmed cars</string>
+</resources>
